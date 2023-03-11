@@ -74,4 +74,13 @@ return {
   --     }, { mode = "n", prefix = "<leader>" })
   --   end,
   -- },
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    opts = function(_, opts)
+      opts.source_selector = {
+        winbar = false,
+      }
+      return opts
+    end,
+  },
 }
